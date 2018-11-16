@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TAMModertates</string>
+    <string name="title_text"><![CDATA[Texas A&M Moderates]]></string>
+    <string name="purpose_text">Tolerance • Diversity • Open-Mindedness</string>
+    <string name="tamm_logo_img_desc">TAMM Logo</string>
+    <string name="sign_in_button_label">Sign In</string>
+    <string name="social_media_button_label">Social Media</string>
+    <string name="meet_the_officers_button_label">Meet the Officers</string>
+    <string name="about_button_label">About</string>
+    <string name="important_dates_button_label">Important Dates</string>
+</resources>
