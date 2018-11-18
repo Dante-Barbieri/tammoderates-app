@@ -16,8 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Social_Media"
-                  android:label="@string/social_media_label">
+        <activity
+                android:name=".Social_Media"
+                android:label="@string/social_media_label">
+        </activity>
+        <activity
+                android:name=".Meet_The_Officers"
+                android:label="@string/title_activity_meet_the_officers"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".About"
+                android:label="@string/app_name">
+        </activity>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
+
+        <activity android:name=".Important_Dates"
+                  android:label="@string/tamm_important_dates_title">
         </activity>
     </application>
 

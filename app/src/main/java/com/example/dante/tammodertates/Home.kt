@@ -35,4 +35,14 @@ class Home : Activity() {
         val social_intent = Intent(this, Social_Media::class.java)
         startActivity(social_intent)
     }
+
+    fun openMeetTheOfficersActivity(view: View) {
+        val meet_intent = Intent(this, Meet_The_Officers::class.java)
+        startActivity(meet_intent)
+    }
+
+    fun openAboutActivity(view: View) {
+        val about_intent = Intent(this, About::class.java)
+        startActivity(about_intent)
+    }
 }

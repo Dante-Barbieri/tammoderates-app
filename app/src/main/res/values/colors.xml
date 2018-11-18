@@ -5,4 +5,5 @@
     <color name="colorAccent">#800000</color>
     <color name="textColor">#EEEEEE</color>
     <color name="backgroundColor">#500000</color>
+    <color name="meetTextColor">#111111</color>
 </resources>
