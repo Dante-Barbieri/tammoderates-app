@@ -8,4 +8,8 @@
     <string name="meet_the_officers_button_label">Meet the Officers</string>
     <string name="about_button_label">About</string>
     <string name="important_dates_button_label">Important Dates</string>
+    <string name="twitter_button">Twitter Button</string>
+    <string name="instagram_button">Instagram Button</string>
+    <string name="facebook_button">Facebook Button</string>
+    <string name="tamm_website_button">TAMM Website Button</string>
 </resources>
