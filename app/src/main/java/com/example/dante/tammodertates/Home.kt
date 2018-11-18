@@ -3,7 +3,6 @@ package com.example.dante.tammodertates
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.ActivityInfo
-import android.content.pm.ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
@@ -16,7 +15,7 @@ class Home : Activity() {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.activity_home)
-        requestedOrientation = SCREEN_ORIENTATION_SENSOR_PORTRAIT
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT
     }
 
     fun toastApp(view: View) {
