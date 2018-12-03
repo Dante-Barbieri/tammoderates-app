@@ -13,9 +13,9 @@
             android:text="@string/title_text"
             app:layout_constraintRight_toRightOf="parent"
             android:id="@+id/title_label"
-            android:textSize="22sp" android:textColor="@color/textColor"
+            android:textSize="36sp" android:textColor="@color/textColor"
             app:layout_constraintTop_toTopOf="@+id/tamm-icon"
-            app:layout_constraintBottom_toBottomOf="@+id/tamm-icon" android:layout_marginEnd="18dp"/>
+            app:layout_constraintBottom_toBottomOf="@+id/tamm-icon" android:layout_marginEnd="32dp"/>
     <TextView
             android:text="@string/purpose_text"
             android:layout_width="wrap_content"
@@ -27,9 +27,9 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"/>
     <ImageView
-            android:src="@drawable/tammoderates_logo_tiny"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:src="@drawable/tammoderates_logo"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
             android:id="@+id/tamm-icon"
             android:contentDescription="@string/tamm_logo_img_desc"
             app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +68,8 @@
             android:layout_marginStart="32dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintTop_toBottomOf="@+id/social_media_button"
-            app:layout_constraintBottom_toTopOf="@+id/about_button" android:textSize="24sp" android:onClick="toastApp"/>
+            app:layout_constraintBottom_toTopOf="@+id/about_button" android:textSize="24sp"
+            android:onClick="openMeetTheOfficersActivity"/>
 
     <Button
             android:text="@string/about_button_label"
@@ -79,7 +80,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintTop_toBottomOf="@+id/officers_button"
             app:layout_constraintBottom_toTopOf="@+id/important_dates_button" android:textSize="24sp"
-            android:onClick="toastApp"/>
+            android:onClick="openAboutActivity"/>
 
     <Button
             android:text="@string/important_dates_button_label"
@@ -90,6 +91,6 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
             android:layout_marginBottom="18dp" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/about_button" app:layout_constraintHorizontal_bias="0.5"
-            android:textSize="24sp" android:onClick="toastApp"/>
+            android:textSize="24sp" android:onClick="openImportantDatesActivity"/>
 
 </android.support.constraint.ConstraintLayout>

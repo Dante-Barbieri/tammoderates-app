@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">TAMModertates</string>
-    <string name="title_text"><![CDATA[Texas A&M Moderates]]></string>
+    <string name="social_media_label">TAMM Social Media Links</string>
+    <string name="title_text"><![CDATA[Texas A&M\nModerates]]></string>
     <string name="purpose_text">Tolerance • Diversity • Open-Mindedness</string>
     <string name="tamm_logo_img_desc">TAMM Logo</string>
     <string name="sign_in_button_label">Sign In</string>
@@ -8,4 +9,69 @@
     <string name="meet_the_officers_button_label">Meet the Officers</string>
     <string name="about_button_label">About</string>
     <string name="important_dates_button_label">Important Dates</string>
+    <string name="twitter_button">Twitter Button</string>
+    <string name="instagram_button">Instagram Button</string>
+    <string name="facebook_button">Facebook Button</string>
+    <string name="tamm_website_button">TAMM Website Button</string>
+    <string name="launcher_name">TAMM</string>
+    <string name="title_activity_meet_the_officers">Meet The Officers</string>
+    <string name="president_name">Sydney Jamison</string>
+    <string name="vice_president_name">Maddie Nieto</string>
+    <string name="treasurer_name">Augustin Olivares</string>
+    <string name="director_internal_affairs1_name">Mariana Gama</string>
+    <string name="director_internal_affairs2_name">Justin Holifield</string>
+    <string name="director_public_relations_name">Troy Hare</string>
+    <string name="president_position">President</string>
+    <string name="vice_president_position">Vice President</string>
+    <string name="treasurer_position">Treasurer</string>
+    <string name="director_internal_affairs_position">Director of Internal Affairs</string>
+    <string name="director_public_relations_position">Director of Public Relations</string>
+    <string name="president_bio">
+        "Howdy! My name is Sydney Jamison, I am a senior International Studies major with a focus in Politics and
+        Diplomacy with minors in French and Economics. Growing up as an Air Force BRAT, I was exposed to different and
+        conflicting opinions. I believe that my passion for this organization can drive it to success and encourage
+        others to be comfortable with the vast contrasting views that we encounter daily."
+    </string>
+    <string name="vice_president_bio">
+        "Howdy! I&apos;m Maddie, and im the Vice President for Texas A&amp;M Moderates. I&apos;m a senior International
+        Studies with a focus in Global Cultural Studies and a minor in French. I&apos;m a first generation Ag, and my
+        hometown is Temple, Texas."
+    </string>
+    <string name="treasurer_bio">
+        "Hey y&apos;all ! My name is Augustin and I am the founding treasurer for TAMM. I am a geology major and Navy
+        veteran, class of &apos;19 Ayy, Whoop! I enjoy meeting others and discussion on various topics with them, I love
+        to formulate ways to get others to think with clarity and inclusion! I have a passion for the earth, economics
+        and business with clients. This year is going to be a blast and we look forward to your interest in TAMM!"
+    </string>
+    <string name="director_internal_affairs1_bio">
+        "Mariana Gama is an honors student at A&amp;M, majoring in International Studies and minoring in French and
+        Psychology. In Texas A&amp;M Moderates, she is a director of internal affairs and hopes to partake in the
+        organization&apos;s goal of creating open-mindedness and bridging the two party divide. At Texas A&amp;M she is
+        also part of the International Student Mentorship Association (ISMA), No Lost Generation, and the Fellowship of
+        Catholic University Students (FOCUS). Originally from Colombia, she is passionate about world issues and has
+        spent much of her life traveling and doing volunteer work in developing countries. Her passions/hobbies also
+        include photography, music, rock climbing, and dancing. She aspires to one day achieve a career in human rights
+        work."
+    </string>
+    <string name="director_internal_affairs2_bio">
+        "Justin Holifield is an RPTS major with a focus on hotel and tourism management. I am one of the Internal
+        Affairs Directors in Aggie Moderates, and personally enjoy local as well as international politics. My personal
+        interests include working as a purchasing agent and reading."
+    </string>
+    <string name="director_public_relations_bio">
+        "Howdy y&apos;all, my name is Troy, and I have the pleasure of serving as the Director of Public Relations for
+        the inaugural year of Texas A&amp;M Moderates. I am a junior, Graphic Design major from Baytown, Texas. I have a
+        passion for art and design, so I am extremely excited to bring my skills to such an amazing organization. Some
+        of my hobbies include, hiking, kayaking, camping, reading, and doing stupid things with my friends. I hope to
+        one day write, illustrate, and publish a graphic novel."
+    </string>
+
+    <string name="action_settings">Settings</string>
+    <string name="president_image_desc">president_image</string>
+    <string name="about_label">About</string>
+    <string name="about_body">
+        <![CDATA[Our organization as the Texas A&M Moderates mission is to provide a compassionate environment with the intentions to encourage political discussion, educate students of both communal and global issues, through the collaboration of diverse political opinions.]]></string>
+    <string name="apply_button_label">Apply</string>
+    <string name="tamm_important_dates_title">TAMM Important Dates</string>
+    <string name="important_dates_label">The Flow and Movement of Freedom of Speech - 11/18/18\nTAMM Sponsor Speech (LAST MEETING) - 11/25/18\nEnd of Semester Social - 12/01/18</string>
 </resources>
