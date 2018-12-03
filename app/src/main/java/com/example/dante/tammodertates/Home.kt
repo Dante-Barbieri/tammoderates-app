@@ -45,4 +45,9 @@ class Home : Activity() {
         val about_intent = Intent(this, About::class.java)
         startActivity(about_intent)
     }
+
+    fun openImportantDatesActivity(view: View) {
+        val important_intent = Intent(this, Important_Dates::class.java)
+        startActivity(important_intent)
+    }
 }

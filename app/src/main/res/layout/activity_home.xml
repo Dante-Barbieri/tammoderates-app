@@ -91,6 +91,6 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
             android:layout_marginBottom="18dp" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/about_button" app:layout_constraintHorizontal_bias="0.5"
-            android:textSize="24sp" android:onClick="toastApp"/>
+            android:textSize="24sp" android:onClick="openImportantDatesActivity"/>
 
 </android.support.constraint.ConstraintLayout>
