@@ -1,10 +1,11 @@
-package com.example.dante.tammodertates
+package com.example.dante.tammoderates
 
 import android.content.Intent
 import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.dante.tammodertates.R
 
 class Social_Media : AppCompatActivity() {
 

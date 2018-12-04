@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "334039861540",
+    "firebase_url": "https://tammoderates-app.firebaseio.com",
+    "project_id": "tammoderates-app",
+    "storage_bucket": "tammoderates-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334039861540:android:10250f0fca38a1c7",
+        "android_client_info": {
+          "package_name": "com.example.dante.tammoderates"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334039861540-3r98mg4jktiinumvg9bc8vse4flca678.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dante.tammoderates",
+            "certificate_hash": "1cecb457855d3861e7d082e849c79a67b05727c0"
+          }
+        },
+        {
+          "client_id": "334039861540-7k7si28qq1fnnvg1m91hmkd3r6cllmqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx8wz6T5nhMNRIuN8AiG0VBOH9ZHCbhVA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334039861540-7k7si28qq1fnnvg1m91hmkd3r6cllmqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

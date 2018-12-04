@@ -1,4 +1,4 @@
-package com.example.dante.tammodertates
+package com.example.dante.tammoderates
 
 import android.app.Activity
 import android.content.Intent
@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.Window
 import android.widget.Toast
+import com.example.dante.tammodertates.R
 
 class Home : Activity() {
 
@@ -24,11 +25,13 @@ class Home : Activity() {
     }
 
     fun openSignIn(view: View) {
-        val url = "https://goo.gl/forms/z9J9CWtFwHciRRGl2"
-
-        val i = Intent(Intent.ACTION_VIEW)
-        i.data = Uri.parse(url)
-        startActivity(i)
+        val login_intent = Intent(this, Login::class.java)
+        startActivity(login_intent)
+//        val url = "https://goo.gl/forms/z9J9CWtFwHciRRGl2"
+//
+//        val i = Intent(Intent.ACTION_VIEW)
+//        i.data = Uri.parse(url)
+//        startActivity(i)
     }
 
     fun openSocialMediaActivity(view: View) {

@@ -1,4 +1,4 @@
-package com.example.dante.tammodertates
+package com.example.dante.tammoderates
 
 import android.annotation.TargetApi
 import android.content.Intent
@@ -10,11 +10,15 @@ import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.text.Layout.JUSTIFICATION_MODE_INTER_WORD
 import android.widget.TextView
+import com.example.dante.tammodertates.R
 import kotlinx.android.synthetic.main.activity_meet__the__officers.*
 import kotlinx.android.synthetic.main.content_meet__the__officers.*
+import java.time.temporal.JulianFields
 
 class Meet_The_Officers : AppCompatActivity() {
 
+    @TargetApi(Build.VERSION_CODES.O)
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meet__the__officers)
@@ -26,11 +30,10 @@ class Meet_The_Officers : AppCompatActivity() {
             i.data = Uri.parse(url)
             startActivity(i)
         }
+
         val bios = listOf(president_bio, vice_president_bio, treasurer_bio, director_internal_affairs1_bio,
             director_internal_affairs2_bio, director_public_relations_bio)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            justifyBios(bios)
-        }
+        justifyBios(bios)
     }
 
     @TargetApi(Build.VERSION_CODES.O)

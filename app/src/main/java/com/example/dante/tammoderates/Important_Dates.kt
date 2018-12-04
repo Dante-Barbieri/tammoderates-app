@@ -1,7 +1,8 @@
-package com.example.dante.tammodertates
+package com.example.dante.tammoderates
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.dante.tammodertates.R
 
 class Important_Dates : AppCompatActivity() {
 
