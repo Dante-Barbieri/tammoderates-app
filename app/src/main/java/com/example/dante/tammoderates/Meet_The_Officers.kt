@@ -17,8 +17,6 @@ import java.time.temporal.JulianFields
 
 class Meet_The_Officers : AppCompatActivity() {
 
-    @TargetApi(Build.VERSION_CODES.O)
-    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meet__the__officers)
@@ -31,9 +29,10 @@ class Meet_The_Officers : AppCompatActivity() {
             startActivity(i)
         }
 
-        val bios = listOf(president_bio, vice_president_bio, treasurer_bio, director_internal_affairs1_bio,
-            director_internal_affairs2_bio, director_public_relations_bio)
-        justifyBios(bios)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val bios = listOf(president_bio, vice_president_bio, treasurer_bio, director_internal_affairs1_bio, director_internal_affairs2_bio, director_public_relations_bio)
+            justifyBios(bios)
+        }
     }
 
     @TargetApi(Build.VERSION_CODES.O)

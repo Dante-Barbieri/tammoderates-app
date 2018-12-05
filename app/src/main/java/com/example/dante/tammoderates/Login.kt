@@ -9,6 +9,7 @@ import android.os.Handler
 import android.support.design.widget.Snackbar
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import com.example.dante.tammodertates.R
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -20,6 +21,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.android.synthetic.main.activity_login.*
+import java.text.SimpleDateFormat
+import java.util.*
 
 /**
  * A login screen that offers login via email/password.
@@ -78,8 +81,8 @@ class Login : BaseActivity(), View.OnClickListener {
                 // ...
             }
         }
-//        val handler =  Handler()
-//        handler.postDelayed({returnToMain()}, 1500)
+        val handler =  Handler()
+        handler.postDelayed({returnToMain()}, 1500)
     }
 
     private fun firebaseAuthWithGoogle(acct: GoogleSignInAccount) {
@@ -122,6 +125,22 @@ class Login : BaseActivity(), View.OnClickListener {
         }
         val handler =  Handler()
         handler.postDelayed({returnToMain()}, 500)
+    }
+
+    private fun getCurrentDateTime(strDateFormat: String = "mm/dd/yyyy hh:mm:ss a"): String? {
+        val date = Date()
+        val dateFormat = SimpleDateFormat(strDateFormat)
+        return dateFormat.format(date)
+    }
+
+    fun logMeeting(view: View) {
+        //TODO: Use Firebase Analytics logging to process User Properties
+        val bundle = Bundle()
+        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, auth.currentUser?.displayName)
+        bundle.putString(FirebaseAnalytics.Param.START_DATE, getCurrentDateTime("yyyy-mm-dd"))
+        firebaseAnalytics.logEvent("log_meeting", bundle)
+        val date = getCurrentDateTime()
+        Snackbar.make(main_layout, "Meeting on " + date + " logged!", Snackbar.LENGTH_SHORT).show()
     }
 
     private fun returnToMain() {
