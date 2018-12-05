@@ -1,47 +1,24 @@
 package com.example.dante.tammoderates
 
-import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
-import android.annotation.TargetApi
-import android.content.pm.PackageManager
-import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity
-import android.app.LoaderManager.LoaderCallbacks
-import android.content.CursorLoader
-import android.content.Loader
-import android.database.Cursor
-import android.net.Uri
-import android.os.AsyncTask
-import android.os.Build
-import android.os.Bundle
-import android.provider.ContactsContract
-import android.text.TextUtils
-import android.view.View
-import android.view.inputmethod.EditorInfo
-import android.widget.ArrayAdapter
-import android.widget.TextView
-
-import java.util.ArrayList
-import android.Manifest.permission.READ_CONTACTS
-import android.content.Intent
-import android.os.Handler
-import android.support.v4.content.ContextCompat.startActivity
-import android.util.Log
-import com.example.dante.tammodertates.R
-import com.example.dante.tammodertates.R.id.*
 //import com.example.dante.tammodertates.R.id.detail
 //import com.example.dante.tammodertates.R.id.email_sign_in_button
+
+import android.content.Intent
+import android.os.Bundle
+import android.os.Handler
+import android.support.design.widget.Snackbar
+import android.util.Log
+import android.view.View
+import com.example.dante.tammodertates.R
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
-import com.google.firebase.analytics.FirebaseAnalytics
-
 import kotlinx.android.synthetic.main.activity_login.*
 
 /**
@@ -76,12 +53,6 @@ class Login : BaseActivity(), View.OnClickListener {
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
         auth = FirebaseAuth.getInstance()
-
-        val bundle = Bundle()
-        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "@+id/signInButton")
-        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Sign In Button")
-        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "button")
-        firebaseAnalytics.logEvent(FirebaseAnalytics.Event.LOGIN, bundle)
     }
 
     public override fun onStart() {
@@ -107,8 +78,8 @@ class Login : BaseActivity(), View.OnClickListener {
                 // ...
             }
         }
-        val handler =  Handler()
-        handler.postDelayed({returnToMain()}, 1500)
+//        val handler =  Handler()
+//        handler.postDelayed({returnToMain()}, 1500)
     }
 
     private fun firebaseAuthWithGoogle(acct: GoogleSignInAccount) {

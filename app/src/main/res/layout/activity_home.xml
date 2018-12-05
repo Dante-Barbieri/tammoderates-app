@@ -27,7 +27,7 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"/>
     <ImageView
-            android:src="@drawable/tammoderates_logo"
+            android:src="@drawable/tamm_logo_nobg"
             android:layout_width="128dp"
             android:layout_height="128dp"
             android:id="@+id/tamm-icon"
@@ -45,7 +45,8 @@
             android:layout_marginStart="32dp" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="32dp" android:layout_marginTop="18dp" app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintBottom_toTopOf="@+id/social_media_button" android:textSize="24sp"
-            android:onClick="openSignIn"/>
+            android:onClick="openSignIn" android:background="@drawable/round_rect_button" android:layout_marginBottom="4dp"
+            android:textColor="@color/grey_500"/>
 
     <Button
             android:text="@string/social_media_button_label"
@@ -58,7 +59,8 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintTop_toBottomOf="@+id/sign_in_button"
             app:layout_constraintBottom_toTopOf="@+id/officers_button" android:textSize="24sp"
-            android:onClick="openSocialMediaActivity"/>
+            android:onClick="openSocialMediaActivity" android:background="@drawable/round_rect_button"
+            android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:textColor="@color/grey_500"/>
 
     <Button
             android:text="@string/meet_the_officers_button_label"
@@ -69,7 +71,8 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintTop_toBottomOf="@+id/social_media_button"
             app:layout_constraintBottom_toTopOf="@+id/about_button" android:textSize="24sp"
-            android:onClick="openMeetTheOfficersActivity"/>
+            android:onClick="openMeetTheOfficersActivity" android:background="@drawable/round_rect_button"
+            android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:textColor="@color/grey_500"/>
 
     <Button
             android:text="@string/about_button_label"
@@ -80,7 +83,8 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintTop_toBottomOf="@+id/officers_button"
             app:layout_constraintBottom_toTopOf="@+id/important_dates_button" android:textSize="24sp"
-            android:onClick="openAboutActivity"/>
+            android:onClick="openAboutActivity" android:background="@drawable/round_rect_button"
+            android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:textColor="@color/grey_500"/>
 
     <Button
             android:text="@string/important_dates_button_label"
@@ -91,6 +95,8 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
             android:layout_marginBottom="18dp" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/about_button" app:layout_constraintHorizontal_bias="0.5"
-            android:textSize="24sp" android:onClick="openImportantDatesActivity"/>
+            android:textSize="24sp" android:onClick="openImportantDatesActivity"
+            android:background="@drawable/round_rect_button" android:layout_marginTop="4dp"
+            android:textColor="@color/grey_500"/>
 
 </android.support.constraint.ConstraintLayout>

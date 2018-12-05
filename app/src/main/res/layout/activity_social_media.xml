@@ -8,43 +8,52 @@
         tools:context="com.example.dante.tammoderates.Social_Media" android:background="@color/backgroundColor">
 
     <ImageButton
-            android:src="@drawable/twitter_logo"
+            android:src="@drawable/twitter_logo_lines"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:id="@+id/twitter_button" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:id="@+id/twitter_button"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            android:scaleType="fitCenter" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/instagram_button"
-            android:contentDescription="@string/twitter_button" android:onClick="openTwitter"/>
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/twitter_button" android:onClick="openTwitter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/tamm_website_button"
+            app:layout_constraintTop_toBottomOf="@+id/facebook_button" android:background="@drawable/round_rect_button"
+            android:tint="@color/grey_300" android:layout_marginTop="8dp" android:layout_marginEnd="8dp"
+    />
     <ImageButton
-            android:src="@drawable/instagram_logo"
+            android:src="@drawable/instagram_logo_lines"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:id="@+id/instagram_button" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/instagram_button"
             android:scaleType="fitCenter" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/twitter_button"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/facebook_button"
-            android:contentDescription="@string/instagram_button" android:onClick="openInstagram"/>
+            android:contentDescription="@string/instagram_button" android:onClick="openInstagram"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/facebook_button" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/tamm_website_button" android:tint="@color/grey_300"
+            android:background="@drawable/round_rect_button" android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"/>
     <ImageButton
-            android:src="@drawable/facebook_logo"
+            android:src="@drawable/facebook_logo_lines"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/facebook_button" app:layout_constraintStart_toStartOf="parent"
-            android:scaleType="fitCenter" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:scaleType="fitCenter"
             android:layout_marginStart="8dp"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintTop_toBottomOf="@+id/instagram_button"
-            app:layout_constraintBottom_toTopOf="@+id/tamm_website_button"
-            android:contentDescription="@string/facebook_button" android:onClick="openFacebook"/>
+            android:contentDescription="@string/facebook_button" android:onClick="openFacebook"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/instagram_button"
+            app:layout_constraintBottom_toTopOf="@+id/twitter_button" android:background="@drawable/round_rect_button"
+            android:tint="@color/grey_300" android:layout_marginBottom="8dp" android:layout_marginEnd="8dp"/>
     <ImageButton
-            android:src="@drawable/tammoderates_logo"
+            android:src="@drawable/tammoderates_logo_nowords_nobg_margin"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:id="@+id/tamm_website_button" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/tamm_website_button"
             android:scaleType="fitCenter" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            app:layout_constraintHorizontal_bias="0.5"
+            android:contentDescription="@string/tamm_website_button" android:onClick="openWebsite"
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/facebook_button"
-            android:contentDescription="@string/tamm_website_button" android:onClick="openWebsite"/>
+            app:layout_constraintStart_toEndOf="@+id/twitter_button" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@+id/instagram_button" android:background="@drawable/round_rect_button"
+            android:tint="@color/grey_300" android:layout_marginStart="8dp" android:layout_marginTop="8dp"/>
 </android.support.constraint.ConstraintLayout>

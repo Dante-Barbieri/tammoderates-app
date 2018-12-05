@@ -9,26 +9,44 @@
         android:layout_height="match_parent"
         tools:context="com.example.dante.tammoderates.Meet_The_Officers">
 
-    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="192dp"
-                android:src="@drawable/officer_president" android:id="@+id/president_image"
-                android:contentDescription="@string/president_image_desc" android:layout_marginTop="18dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical" android:background="@color/backgroundColor">
+
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp"
+                    android:src="@drawable/officer_president"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/president_image"
+                    android:contentDescription="@string/president_image_desc"
+                    android:layout_marginTop="18dp"/>
+
+            <ImageView
+                    android:src="@drawable/round_rect_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"/>
+        </FrameLayout>
+
 
         <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/president_name" android:id="@+id/president_name"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1" android:textSize="30sp"/>
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1" android:textSize="30sp"
+                android:textColor="@color/grey_100"/>
 
         <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/president_position" android:id="@+id/president_position"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" android:textSize="18sp"/>
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" android:textSize="18sp"
+                android:textColor="@color/grey_500"/>
 
         <TextView
                 android:layout_width="match_parent"
@@ -36,26 +54,41 @@
                 android:gravity="center_vertical"
                 android:text="@string/president_bio" android:id="@+id/president_bio"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:layout_marginRight="18dp" android:layout_marginLeft="18dp" android:layout_marginBottom="18dp"/>
+                android:layout_marginRight="18dp" android:layout_marginLeft="18dp" android:layout_marginBottom="18dp"
+                android:textColor="@color/grey_300"/>
 
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="192dp"
-                android:src="@drawable/officer_vice_president" android:id="@+id/vice_president_image"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp"
+                    android:src="@drawable/officer_vice_president"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/vice_president_image"
+                    android:contentDescription="@string/president_image_desc"/>
+
+            <ImageView
+                    android:src="@drawable/round_rect_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </FrameLayout>
 
         <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/vice_president_name" android:id="@+id/vice_president_name"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1" android:textSize="30sp"/>
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1" android:textSize="30sp"
+                android:textColor="@color/grey_100"/>
 
         <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/vice_president_position" android:id="@+id/vice_president_position"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" android:textSize="18sp"/>
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" android:textSize="18sp"
+                android:textColor="@color/grey_500"/>
 
         <TextView
                 android:layout_width="fill_parent"
@@ -63,26 +96,41 @@
                 android:gravity="center_vertical"
                 android:text="@string/vice_president_bio" android:id="@+id/vice_president_bio"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:layout_marginRight="18dp" android:layout_marginLeft="18dp" android:layout_marginBottom="18dp"/>
+                android:layout_marginRight="18dp" android:layout_marginLeft="18dp" android:layout_marginBottom="18dp"
+                android:textColor="@color/grey_300"/>
 
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="192dp"
-                android:src="@drawable/officer_treasurer" android:id="@+id/treasurer_image"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp"
+                    android:src="@drawable/officer_treasurer"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/treasurer_image"
+                    android:contentDescription="@string/president_image_desc"/>
+
+            <ImageView
+                    android:src="@drawable/round_rect_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </FrameLayout>
 
         <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/treasurer_name" android:id="@+id/treasurer_name"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1" android:textSize="30sp"/>
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1" android:textSize="30sp"
+                android:textColor="@color/grey_100"/>
 
         <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/treasurer_position" android:id="@+id/treasurer_position"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" android:textSize="18sp"/>
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" android:textSize="18sp"
+                android:textColor="@color/grey_500"/>
 
         <TextView
                 android:layout_width="fill_parent"
@@ -90,26 +138,42 @@
                 android:gravity="center_vertical"
                 android:text="@string/treasurer_bio" android:id="@+id/treasurer_bio"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:layout_marginRight="18dp" android:layout_marginLeft="18dp" android:layout_marginBottom="18dp"/>
+                android:layout_marginRight="18dp" android:layout_marginLeft="18dp" android:layout_marginBottom="18dp"
+                android:textColor="@color/grey_300"/>
 
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="192dp"
-                android:src="@drawable/officer_director_internal_affairs1" android:id="@+id/director_internal_affairs1_image"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp"
+                    android:src="@drawable/officer_director_internal_affairs1"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/director_internal_affairs1_image"
+                    android:contentDescription="@string/president_image_desc"/>
+
+            <ImageView
+                    android:src="@drawable/round_rect_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </FrameLayout>
 
         <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/director_internal_affairs1_name" android:id="@+id/director_internal_affairs1_name"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1" android:textSize="30sp"/>
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1" android:textSize="30sp"
+                android:textColor="@color/grey_100"/>
 
         <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/director_internal_affairs_position" android:id="@+id/director_internal_affairs1_position"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" android:textSize="18sp"/>
+                android:text="@string/director_internal_affairs_position"
+                android:id="@+id/director_internal_affairs1_position"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" android:textSize="18sp"
+                android:textColor="@color/grey_500"/>
 
         <TextView
                 android:layout_width="fill_parent"
@@ -117,26 +181,42 @@
                 android:gravity="center_vertical"
                 android:text="@string/director_internal_affairs1_bio" android:id="@+id/director_internal_affairs1_bio"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:layout_marginRight="18dp" android:layout_marginLeft="18dp" android:layout_marginBottom="18dp"/>
+                android:layout_marginRight="18dp" android:layout_marginLeft="18dp" android:layout_marginBottom="18dp"
+                android:textColor="@color/grey_300"/>
 
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="192dp"
-                android:src="@drawable/officer_director_internal_affairs2" android:id="@+id/director_internal_affairs2_image"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp"
+                    android:src="@drawable/officer_director_internal_affairs2"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/director_internal_affairs2_image"
+                    android:contentDescription="@string/president_image_desc"/>
+
+            <ImageView
+                    android:src="@drawable/round_rect_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </FrameLayout>
 
         <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/director_internal_affairs2_name" android:id="@+id/director_internal_affairs2_name"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1" android:textSize="30sp"/>
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1" android:textSize="30sp"
+                android:textColor="@color/grey_100"/>
 
         <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/director_internal_affairs_position" android:id="@+id/director_internal_affairs2_position"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" android:textSize="18sp"/>
+                android:text="@string/director_internal_affairs_position"
+                android:id="@+id/director_internal_affairs2_position"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" android:textSize="18sp"
+                android:textColor="@color/grey_500"/>
 
         <TextView
                 android:layout_width="fill_parent"
@@ -144,26 +224,42 @@
                 android:gravity="center_vertical"
                 android:text="@string/director_internal_affairs2_bio" android:id="@+id/director_internal_affairs2_bio"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:layout_marginRight="18dp" android:layout_marginLeft="18dp" android:layout_marginBottom="18dp"/>
+                android:layout_marginRight="18dp" android:layout_marginLeft="18dp" android:layout_marginBottom="18dp"
+                android:textColor="@color/grey_300"/>
 
-        <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="192dp"
-                android:src="@drawable/officer_director_public_relations" android:id="@+id/director_public_relations_image"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp"
+                    android:src="@drawable/officer_director_public_relations"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/director_public_relations_image"
+                    android:contentDescription="@string/president_image_desc"/>
+
+            <ImageView
+                    android:src="@drawable/round_rect_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </FrameLayout>
 
         <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/director_public_relations_name" android:id="@+id/director_public_relations_name"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1" android:textSize="30sp"/>
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1" android:textSize="30sp"
+                android:textColor="@color/grey_100"/>
 
         <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/director_public_relations_position" android:id="@+id/director_public_relations_position"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" android:textSize="18sp"/>
+                android:text="@string/director_public_relations_position"
+                android:id="@+id/director_public_relations_position"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2" android:textSize="18sp"
+                android:textColor="@color/grey_500"/>
 
         <TextView
                 android:layout_width="fill_parent"
@@ -171,7 +267,8 @@
                 android:gravity="center_vertical"
                 android:text="@string/director_public_relations_bio" android:id="@+id/director_public_relations_bio"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:layout_marginRight="18dp" android:layout_marginLeft="18dp" android:layout_marginBottom="18dp"/>
+                android:layout_marginRight="18dp" android:layout_marginLeft="18dp" android:layout_marginBottom="18dp"
+                android:textColor="@color/grey_300"/>
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
